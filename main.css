@@ -1294,6 +1294,15 @@ strong {
     margin-left: 50px;
   }
 
+  .sidenav > .search-box {
+    /* width: 80%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .sidenav > .search-box > .inp {
+    width: 80%;
+  }
   hgroup > h1 {
     font-size: 2em !important;
   }
