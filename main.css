@@ -589,7 +589,7 @@ Image credits: unsplash.com
 .cards {
   width: 250px;
   min-width: 230px;
-  height: 350px;
+  height: 320px;
   margin: 5px;
   border: 1px solid #cdcdcd;
   display: flex;
@@ -610,7 +610,7 @@ Image credits: unsplash.com
 } */
 .card-bottom {
   width: 100%;
-  height: 60%;
+  height: 55%;
 }
 .card-bottom > .info,
 .card-bottom > .headings,
@@ -673,9 +673,15 @@ Image credits: unsplash.com
 .foot > :nth-child(2) {
   width: 25%;
 } */
-#cart {
-  width: 30%;
+.cart1 {
+  width: 70px;
   height: 100%;
+}
+.cart2 {
+  width: 70px !important;
+  height: 100% !important;
+}
+#cart {
   display: flex;
   background-color: var(--main-bg-color);
   align-items: center;
@@ -685,8 +691,11 @@ Image credits: unsplash.com
   border: 2px solid var(--main-bg-color);
 }
 #cart > img {
-  width: 30px;
-  height: 40px;
+  width: 25px;
+  height: 30px;
+}
+#cart > i {
+  font-size: 18px;
 }
 strong {
   font-size: 18px;
@@ -728,7 +737,7 @@ strong {
 .sec1,
 .sec2 {
   border-bottom: 0px;
-  height: 100px !important;
+  height: 80px !important;
 }
 .sec1 > .info {
   padding-top: 10px;
@@ -740,17 +749,24 @@ strong {
   border-top: 1px solid gainsboro;
 }
 .sec2 > .level {
-  height: 50px;
+  height: 30px;
+}
+.level > p {
+  margin-bottom: 0px;
 }
 .sec2 > .upper {
   display: flex;
   justify-content: space-between;
-  height: 50px;
+  height: 30px;
+  margin-bottom: 16px;
   /* flex-direction: column; */
 }
 .upper > .info {
   display: block;
   margin-top: 0px;
+}
+.upper > .info > p {
+  margin-bottom: 0px;
 }
 .upper > .info > :nth-child(1) {
   color: black;
@@ -763,7 +779,7 @@ strong {
 }
 
 .level > :nth-child(1) {
-  font-size: 14px;
+  font-size: 10px;
 }
 
 .level > :nth-child(2) {
@@ -773,12 +789,14 @@ strong {
 
 .sec3 {
   display: flex;
-  height: 65px;
+  height: 80px;
   font-size: 12px;
+  border-top: 1px solid gainsboro;
   border-bottom: 1px solid gainsboro;
 }
 .sec3 > p {
   margin: 0;
+  color: rgb(175, 175, 175);
 }
 
 .sec4 {
@@ -1191,11 +1209,11 @@ strong {
     display: none;
   }
 
-  .swiper-slide {
+  /* .swiper-slide {
     width: 300px !important;
     margin: 10px 0px;
     /* left: -3%; */
-  }
+  /* } */
 
   .long-card {
     margin-right: 0px !important;
