@@ -1,0 +1,77 @@
+/* Individual tab styles */
+
+/*****************************/
+/* Icon box */
+/*****************************/
+
+.tabs-style-iconbox nav {
+  background: rgb(255, 255, 255);
+  display: flex;
+}
+
+.tabs-style-iconbox nav ul li a {
+  overflow: visible;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+  color: rgb(10, 21, 66);
+  font-size: 13px;
+  margin: 0px 18px;
+}
+
+.tabs-style-iconbox nav ul li a span {
+  font-weight: 700;
+  font-size: 1em;
+}
+.tabs-style-iconbox nav ul li a:hover {
+  list-style-type: none;
+  text-decoration: none;
+}
+.tabs-style-iconbox nav ul li a:focus {
+  text-decoration: none;
+}
+
+.tabs-style-iconbox nav ul li.tab-current {
+  z-index: 100;
+}
+
+.tabs-style-iconbox nav ul li.tab-current a {
+  background: rgb(10, 21, 66);
+  box-shadow: -1px 0 0 #fff;
+  padding: 2px 20px;
+}
+
+.tabs-style-iconbox nav ul li.tab-current a::after {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -10px;
+  width: 0;
+  height: 0;
+  border: solid transparent;
+  border-width: 10px;
+  border-top-color: rgb(10, 21, 66);
+  content: "";
+  pointer-events: none;
+}
+
+/* .tabs-style-iconbox nav ul li:first-child::before,
+.tabs-style-iconbox nav ul li::after {
+  position: absolute;
+  top: 20%;
+  right: 0;
+  z-index: -1;
+  width: 1px;
+  height: 60%;
+  background: rgba(0, 0, 0, 0.07);
+  content: "";
+} */
+
+.tabs-style-iconbox nav ul li:first-child::before {
+  right: auto;
+  left: 0;
+}
+
+.tabs-style-iconbox .icon::before {
+  display: block;
+  margin: 0 0 0.25em 0;
+}

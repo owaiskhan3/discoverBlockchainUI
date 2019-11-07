@@ -1,0 +1,1303 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Task 4</title>
+    <link rel="stylesheet" href="./main.css" />
+    <link rel="stylesheet" href="./tabs.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+  
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+
+
+    
+    <!-- //for tabs section// -->
+    <link rel="shortcut icon" href="../favicon.icon" />
+    <!-- <link rel="stylesheet" type="text/css" href="css/normalize.css" /> -->
+    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="css/tabs.css" />
+    <link rel="stylesheet" type="text/css" href="css/tabstyles.css" />
+    <link rel="stylesheet" type="text/css" href="css/swiper.min.css" />
+    
+  </head>
+  <body>
+    <div class="containers">
+      <div class="navbar">
+        <div class="top-nav">
+          <div class="left"><img src="./assets/united-states.png" alt="">
+            <!-- <div class="drop"> -->
+              <Select>
+                <option value="United States" selected>United States</option>
+                <option value="United Kingdom">United Kingdom</option>
+                <option value="UAE">UAE</option>
+                <option value="Pakistan">Pakistan</option>  
+              </Select>
+            <!-- </div> -->
+            <!-- <span>United States (English)</span> -->
+          </div>
+          <div class="right">
+            <ul>
+              <li>
+                <a href=""><img src="./assets/open-book.png" style="width: 15px; height: 15px; margin:2px 5px"/><span>learn a Skill</span></a>
+              </li>
+              <li>
+                <a href=""><img src="./assets/money.png" style="width: 15px; height: 15px; margin:2px 5px"/><span>Earn as a Freelancer</span></a>
+              </li>
+              <li>
+                <a href=""><img src="./assets/star.png" style="width: 15px; height: 15px; margin:2px 5px"/><span>Post a Job</span></a>
+              </li>
+              <li>
+                <a href=""><img src="./assets/students-cap.png" style="width: 15px; height: 15px; margin:2px 5px"/><span>Become a Teacher</span></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="bottom-nav">
+          <div class="logo">
+            <img src="./assets/logo.PNG" alt="" />
+          </div>
+          <div class="category">
+            <button id="category" onclick="show_hide()" class="button">
+              <i class="fas fa-th"></i>
+            </button>
+            <span>Category</span>
+            <div style="display: none;" id="drop-content">
+              <a href="">Category 1</a>
+              <a href="">Category 2</a>
+              <a href="">Category 3</a>
+              <a href="">Category 4</a>
+              <a href="">Category 5</a>
+            </div>
+          </div>
+          <div class="search">
+            <div class="inp">
+              <input type="search" placeholder="Search" name="" id="" />
+            </div>
+            <div class="drop"><select>
+              Courses
+              <option value="volvo">Courses</option>
+              <option value="HTML">HTML</option>
+              <option value="CSS">CSS</option>
+              <option value="Javascript">Javascript</option>
+            </select></div>
+            <div class="search-icon">
+              <i class="fas fa-search"></i>
+            </div>
+          </div>
+          <!-- <label for="bottom-nav"></label> -->
+
+          <div class="actions">
+            <div class="basket">
+              <i class="fas fa-shopping-cart"></i>
+
+            </div>
+            <div class="btns">
+              <div class="login-btn">Login</div>
+              <div class="registration-btn">Registration</div>
+            </div>
+          </div>
+          <div id="mySidenav" class="sidenav">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+              <div>
+                  <div class="inp">
+                      <input type="search" placeholder="Search" name="" id="" />
+                    </div>
+              </div>
+              <a href="#">Login</a>
+              <a href="#">Register</a>
+              <a href="#">About</a>
+              <a href="#">Services</a>
+              <a href="#">Clients</a>
+              <a href="#">Contact</a>
+            </div>
+            
+            <!-- Use any element to open the sidenav -->
+            <span onclick="openNav()" class="bars"><i class="fas fa-bars" style="color:rgb(45, 45, 129); font-size:32px"></i></span>
+        </div>
+      </div>
+
+      <div class="row1">
+        <!-- Carousel -->
+        <div class="carousel fade-carousel slide" data-ride="carousel" data-interval="4000" id="bs-carousel">
+          <!-- Overlay -->
+          <div class="overlay"></div>
+        
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#bs-carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#bs-carousel" data-slide-to="1"></li>
+            <li data-target="#bs-carousel" data-slide-to="2"></li>
+          </ol>
+          
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+            <div class="item slides active">
+              <div class="slide-1"></div>
+              <div class="hero">
+                <hgroup>
+                    <h1>Online Courses and Jobs</h1>        
+                    <h3>Get start your next awesome project</h3>
+                </hgroup>
+                <button class="btn btn-hero btn-lg" role="button">Get Started Now</button>
+                <button class="btn btn-zero btn-lg" role="button">Learn More</button>
+              </div>
+            </div>
+            <div class="item slides">
+              <div class="slide-2"></div>
+              <div class="hero">        
+                <hgroup>
+                    <h1>Online Courses and Jobs</h1>        
+                    <h3>Get start your next awesome project</h3>
+                </hgroup>       
+                <button class="btn btn-hero btn-lg" role="button">Get Started Now</button>
+                <button class="btn btn-zero btn-lg" role="button">Learn More</button>
+              </div>
+            </div>
+            <div class="item slides">
+              <div class="slide-3"></div>
+              <div class="hero">        
+                <hgroup>
+                    <h1>Online Courses and Jobs</h1>        
+                    <h3>Get start your next awesome project</h3>
+                </hgroup>
+                <button class="btn btn-hero btn-lg" role="button">Get Started Now</button>
+                <button class="btn btn-zero btn-lg" role="button">Learn More</button>
+              </div>
+            </div>
+          </div> 
+        </div>
+        <!-- /carousel -->
+      </div>
+      <div class="bottom">
+        <div class="left-div">
+          <div class="image">
+            <!-- <img src="./assets/logo.PNG" style="width:100px" alt="" /> -->
+            <i class="fas fa-edit"></i>
+          </div>
+          <div class="heading">
+            <h4>100 000+ online courses</h4>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+        </div>
+        <div class="mid-div">
+          <div class="image">
+            <!-- <img src="./assets/logo.PNG" style="width:100px" alt="" /> -->
+            <i class="fas fa-briefcase"></i>
+          </div>
+          <div class="heading">
+            <h4>100 000+ online courses</h4>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+        </div>
+        <div class="right-div">
+          <div class="image">
+            <!-- <img src="./assets/logo.PNG" style="width:100px" alt="" /> -->
+            <i class="fas fa-users"></i>
+          </div>
+          <div class="heading">
+            <h4>100 000+ online courses</h4>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="popular-section">
+        <div class="header">
+          <h1>POPULAR COURSES</h1>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+          <span></span>
+        </div>
+
+        
+            <div class="tabs tabs-style-iconbox">
+              <nav>
+                <ul>
+                  <li>
+                    <a href="#section-iconbox-1" class="icon"><span>CRYPTO AND BLOCKCHAIN</span></a>
+                  </li>
+                  <li>
+                    <a href="#section-iconbox-2" class="icon"><span>FEATURED</span></a>
+                  </li>
+                  <li>
+                    <a href="#section-iconbox-3" class="icon"
+                      ><span>GAME DEVELOPMENT</span></a
+                    >
+                  </li>
+                  <li>
+                    <a href="#section-iconbox-4" class="icon"><span>PROGRAMMING LANGUAGES</span></a>
+                  </li>
+                  <li>
+                    <a href="#section-iconbox-5" class="icon"
+                      ><span>MARKETING</span></a
+                    >
+                  </li>
+                  <li>
+                      <a href="#section-iconbox-6" class="icon"
+                        ><span>BUSSINESS</span></a
+                      >
+                    </li>
+                </ul>
+              </nav>
+              <div class="content-wrap">
+                <section id="section-iconbox-1">
+                    <div class="cards-section">
+                        <div class="cards">
+                          <div class="card-top">
+                            <img src="./assets/card1.png" alt="" />
+                          </div>
+                          <div class="card-bottom">
+                            <div class="info">
+                              <p>by John Doe</p>
+                              <p>last Update: 10/10/2019</p>
+                            </div>
+                            <div class="headings">
+                              <div>
+                                Create React App in React Js tutorial and flux web development
+                                for blockchain
+                              </div>
+                              <p>
+                                The ultimate guide for Building Professional webapps with
+                                facebook React and flux
+                              </p>
+                              
+                            </div>
+                            <div class="stars">
+                              <span class="fa fa-star checked"></span>
+                              <span class="fa fa-star checked"></span>
+                              <span class="fa fa-star checked"></span>
+                              <span class="fa fa-star checked"></span>
+                              <span class="fa fa-star"></span>
+                              <span><b>4.0</b> (2356)</span>
+                            </div>
+                            <div class="foot">
+                              <del>$199.99</del>
+                              <strong>$19,99</strong>
+                                <span id="cart"><i class="fas fa-shopping-cart"></i></span>
+                            </div>
+                          </div>
+                        </div>
+                       
+                        <div class="cards">
+                          <div class="card-top">
+                            <img src="./assets/card1.png" alt="" />
+                          </div>
+                          <div class="card-bottom">
+                            <div class="info">
+                              <p>by John Doe</p>
+                              <p>last Update: 10/10/2019</p>
+                            </div>
+                            <div class="headings">
+                              <div>
+                                Create React App in React Js tutorial and flux web development
+                                for blockchain
+                              </div>
+                              <p>
+                                The ultimate guide for Building Professional webapps with
+                                facebook React and flux
+                              </p>
+                              
+                            </div>
+                            <div class="stars">
+                              <span class="fa fa-star checked"></span>
+                              <span class="fa fa-star checked"></span>
+                              <span class="fa fa-star checked"></span>
+                              <span class="fa fa-star checked"></span>
+                              <span class="fa fa-star"></span>
+                              <span><b>4.0</b> (2356)</span>
+                            </div>
+                            <div class="foot">
+                                <del>$199.99</del>
+                                <strong>$19,99</strong>
+                                  <span id="cart"><i class="fas fa-shopping-cart"></i></span>
+                              </div>
+                          </div>
+                        </div>
+                        <div class="cards">
+                          <div class="card-top">
+                            <img src="./assets/card1.png" alt="" />
+                          </div>
+                          <div class="card-bottom">
+                            <div class="info">
+                              <p>by John Doe</p>
+                              <p>last Update: 10/10/2019</p>
+                            </div>
+                            <div class="headings">
+                              <div>
+                                Create React App in React Js tutorial and flux web development
+                                for blockchain
+                              </div>
+                              <p>
+                                The ultimate guide for Building Professional webapps with
+                                facebook React and flux
+                              </p>
+                              
+                            </div>
+                            <div class="stars">
+                              <span class="fa fa-star checked"></span>
+                              <span class="fa fa-star checked"></span>
+                              <span class="fa fa-star checked"></span>
+                              <span class="fa fa-star checked"></span>
+                              <span class="fa fa-star"></span>
+                              <span><b>4.0</b> (2356)</span>
+                            </div>
+                            <div class="foot">
+                              <del>$199.99</del>
+                              <strong>$19,99</strong>
+                                <span id="cart"><i class="fas fa-shopping-cart"></i></span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="cards">
+                          <div class="card-top">
+                            <img src="./assets/card1.png" alt="" />
+                          </div>
+                          <div class="card-bottom">
+                            <div class="info">
+                              <p>by John Doe</p>
+                              <p>last Update: 10/10/2019</p>
+                            </div>
+                            <div class="headings">
+                              <div>
+                                Create React App in React Js tutorial and flux web development
+                                for blockchain
+                              </div>
+                              <p>
+                                The ultimate guide for Building Professional webapps with
+                                facebook React and flux
+                              </p>
+                              
+                            </div>
+                            <div class="stars">
+                              <span class="fa fa-star checked"></span>
+                              <span class="fa fa-star checked"></span>
+                              <span class="fa fa-star checked"></span>
+                              <span class="fa fa-star checked"></span>
+                              <span class="fa fa-star"></span>
+                              <span><b>4.0</b> (2356)</span>
+                            </div>
+                            <div class="foot">
+                              <del>$199.99</del>
+                              <strong>$19,99</strong>
+                                <span id="cart"><i class="fas fa-shopping-cart"></i></span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="cards-section">
+                        <div class="cards">
+                          <div class="card-top">
+                            <img src="./assets/card1.png" alt="" />
+                          </div>
+                          <div class="card-bottom">
+                            <div class="info">
+                              <p>by John Doe</p>
+                              <p>last Update: 10/10/2019</p>
+                            </div>
+                            <div class="headings">
+                              <div>
+                                Create React App in React Js tutorial and flux web development
+                                for blockchain
+                              </div>
+                              <p>
+                                The ultimate guide for Building Professional webapps with
+                                facebook React and flux
+                              </p>
+                              
+                            </div>
+                            <div class="stars">
+                              <span class="fa fa-star checked"></span>
+                              <span class="fa fa-star checked"></span>
+                              <span class="fa fa-star checked"></span>
+                              <span class="fa fa-star checked"></span>
+                              <span class="fa fa-star"></span>
+                              <span><b>4.0</b> (2356)</span>
+                            </div>
+                            <div class="foot">
+                              <del>$199.99</del>
+                              <strong>$19,99</strong>
+                                <span id="cart"><i class="fas fa-shopping-cart"></i></span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="cards">
+                          <div class="card-top">
+                            <img src="./assets/card1.png" alt="" />
+                          </div>
+                          <div class="card-bottom">
+                            <div class="info">
+                              <p>by John Doe</p>
+                              <p>last Update: 10/10/2019</p>
+                            </div>
+                            <div class="headings">
+                              <div>
+                                Create React App in React Js tutorial and flux web development
+                                for blockchain
+                              </div>
+                              <p>
+                                The ultimate guide for Building Professional webapps with
+                                facebook React and flux
+                              </p>
+                              
+                            </div>
+                            <div class="stars">
+                              <span class="fa fa-star checked"></span>
+                              <span class="fa fa-star checked"></span>
+                              <span class="fa fa-star checked"></span>
+                              <span class="fa fa-star checked"></span>
+                              <span class="fa fa-star"></span>
+                              <span><b>4.0</b> (2356)</span>
+                            </div>
+                            <div class="foot">
+                              <del>$199.99</del>
+                              <strong>$19,99</strong>
+                                <span id="cart"><i class="fas fa-shopping-cart"></i></span>
+                            </div>
+                          </div>
+                        </div>
+                        
+                        <div class="cards">
+                          <div class="card-top">
+                            <img src="./assets/card1.png" alt="" />
+                          </div>
+                          <div class="card-bottom">
+                            <div class="info">
+                              <p>by John Doe</p>
+                              <p>last Update: 10/10/2019</p>
+                            </div>
+                            <div class="headings">
+                              <div>
+                                Create React App in React Js tutorial and flux web development
+                                for blockchain
+                              </div>
+                              <p>
+                                The ultimate guide for Building Professional webapps with
+                                facebook React and flux
+                              </p>
+                              
+                            </div>
+                            <div class="stars">
+                              <span class="fa fa-star checked"></span>
+                              <span class="fa fa-star checked"></span>
+                              <span class="fa fa-star checked"></span>
+                              <span class="fa fa-star checked"></span>
+                              <span class="fa fa-star"></span>
+                              <span><b>4.0</b> (2356)</span>
+                            </div>
+                            <div class="foot">
+                              <del>$199.99</del>
+                              <strong>$19,99</strong>
+                                <span id="cart"><i class="fas fa-shopping-cart"></i></span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="cards">
+                          <div class="card-top">
+                            <img src="./assets/card1.png" alt="" />
+                          </div>
+                          <div class="card-bottom">
+                            <div class="info">
+                              <p>by John Doe</p>
+                              <p>last Update: 10/10/2019</p>
+                            </div>
+                            <div class="headings">
+                              <div>
+                                Create React App in React Js tutorial and flux web development
+                                for blockchain
+                              </div>
+                              <p>
+                                The ultimate guide for Building Professional webapps with
+                                facebook React and flux
+                              </p>
+                              
+                            </div>
+                            <div class="stars">
+                              <span class="fa fa-star checked"></span>
+                              <span class="fa fa-star checked"></span>
+                              <span class="fa fa-star checked"></span>
+                              <span class="fa fa-star checked"></span>
+                              <span class="fa fa-star"></span>
+                              <span><b>4.0</b> (2356)</span>
+                            </div>
+                            <div class="foot">
+                              <del>$199.99</del>
+                              <strong>$19,99</strong>
+                                <span id="cart"><i class="fas fa-shopping-cart"></i></span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </section>
+                <section id="section-iconbox-2"><p>2</p></section>
+                <section id="section-iconbox-3"><p>3</p></section>
+                <section id="section-iconbox-4"><p>4</p></section>
+                <section id="section-iconbox-5"><p>5</p></section>
+                <section id="section-iconbox-6"><p>6</p></section>
+              </div>
+              <!-- /content -->
+            </div>
+            <!-- /tabs -->
+        
+        <div class="see-more">
+          <div class="btn-end">
+            View More
+          </div>
+        </div>
+        <div class="bottom">
+          <div class="left-div">
+            <div class="image">
+              <!-- <img src="./assets/logo.PNG" style="width:100px" alt="" /> -->
+              <i class="fas fa-key"></i>
+            </div>
+            <div class="heading">
+              <h4>Step 1</h4>
+              <p>Register as a Student/Teacher or 
+                Freelancer/Client
+              </p>
+            </div>
+          </div>
+          <div class="mid-div">
+            <div class="image">
+              <!-- <img src="./assets/logo.PNG" style="width:100px" alt="" /> -->
+              <i class="fas fa-mouse-pointer"></i>
+            </div>
+            <div class="heading">
+              <h4>Step 2</h4>
+              <p>Enroll in Course/Create a Course or Apply to Project/Post a Job</p>
+            </div>
+          </div>
+          <div class="right-div">
+            <div class="image">
+              <!-- <img src="./assets/logo.PNG" style="width:100px" alt="" /> -->
+              <i class="fas fa-laptop"></i>
+            </div>
+            <div class="heading">
+              <h4>Step 3</h4>
+              <p>Learn new Skill/Teach or Earn money/Get project done</p>
+            </div>
+          </div>
+        </div>
+        <div class="popular-section">
+            <div class="header">
+              <h1>BEST JOBS FOR YOU</h1>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+              <span></span>
+            </div>
+    
+            <!-- <section> -->
+                <div class="tabs tabs-style-iconbox">
+                    <nav>
+                      <ul>
+                        <li>
+                          <a href="#section-iconbox-1" class="icon"><span>FRONTEND</span></a>
+                        </li>
+                        <li>
+                          <a href="#section-iconbox-2" class="icon"><span>BACKEND</span></a>
+                        </li>
+                        <li>
+                          <a href="#section-iconbox-3" class="icon"
+                            ><span>GAME DEVELOPMENT</span></a
+                          >
+                        </li>
+                        <li>
+                          <a href="#section-iconbox-4" class="icon"><span>DESIGNER</span></a>
+                        </li>
+                        <li>
+                          <a href="#section-iconbox-5" class="icon"
+                            ><span>PRODUCT/PROJECT MANAGER</span></a
+                          >
+                        </li>
+                        <li>
+                            <a href="#section-iconbox-6" class="icon"
+                              ><span>RECRUITING</span></a
+                            >
+                          </li>
+                      </ul>
+                    </nav>
+                    <div class="content-wrap">
+                      <section id="section-iconbox-1">
+                          <div class="cards-section">
+                            <div class="cards">
+                              <div class="sec1">
+                                <h5>Shopify designer for our shoptify theme.</h5>
+                                <div class="info">
+                                    <p>by John Doe</p>
+                                    <p>last Update: 10/10/2019</p>
+                                  </div>
+                              </div>
+                              <div class="sec2">
+                                <div class="upper">
+                                  <div class="info">
+                                      <p><b>Less than 10 hrs/week</b></p>
+                                      <p>Hours needed</p>
+                                    </div>
+                                    <div class="info">
+                                        <p><b>More than 3 months</b></p>
+                                        <p>Duration</p>
+                                      </div>
+                                </div>
+                                  <div class="level">
+                                    <p>$$</p>
+                                    <p>Intermediate</p>
+                                  </div>
+                                </div>
+                              <div class="sec3">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae consequuntur eos nostrum odit atque?</p>
+                              </div>
+                              <div class="sec4">
+                                <div class="wordpress">Wordpress</div>
+                                <div class="html">HTML</div>
+                                <div class="css">CSS</div>
+                                <p>4 more.</p>
+                                
+                              </div>
+                              <div class="sec5">
+                                  <div class="foot">
+                                      <div class="stars">
+                                        <div>
+                                          DScore:10
+                                        </div>
+                                        <div>
+                                          <span class="fa fa-star checked"></span>
+                                          <span class="fa fa-star checked"></span>
+                                          <span class="fa fa-star checked"></span>
+                                          <span class="fa fa-star checked"></span>
+                                          <span class="fa fa-star"></span>
+                                          <span><b>4.0</b> (2356)</span>
+                                        </div>
+                                        </div>
+                                        <span id="cart"><img src="./assets/right-arrow.png" alt=""></span>
+                                    </div>
+                              </div>
+                            </div>
+                            <div class="cards">
+                                <div class="sec1">
+                                  <h5>Shopify designer for our shoptify theme.</h5>
+                                  <div class="info">
+                                      <p>by John Doe</p>
+                                      <p>last Update: 10/10/2019</p>
+                                    </div>
+                                </div>
+                                <div class="sec2">
+                                  <div class="upper">
+                                    <div class="info">
+                                        <p><b>Less than 10 hrs/week</b></p>
+                                        <p>Hours needed</p>
+                                      </div>
+                                      <div class="info">
+                                          <p><b>More than 3 months</b></p>
+                                          <p>Duration</p>
+                                        </div>
+                                  </div>
+                                    <div class="level">
+                                      <p>$$</p>
+                                      <p>Intermediate</p>
+                                    </div>
+                                  </div>
+                                <div class="sec3">
+                                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae consequuntur eos nostrum odit atque?</p>
+                                </div>
+                                <div class="sec4">
+                                  <div class="wordpress">Wordpress</div>
+                                  <div class="html">HTML</div>
+                                  <div class="css">CSS</div>
+                                  <p>4 more.</p>
+                                  
+                                </div>
+                                <div class="sec5">
+                                    <div class="foot">
+                                        <div class="stars">
+                                          <div>
+                                            DScore:10
+                                          </div>
+                                          <div>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span><b>4.0</b> (2356)</span>
+                                          </div>
+                                          </div>
+                                        <span id="cart"><img src="./assets/right-arrow.png" alt=""></span>
+                                      </div>
+                                </div>
+                              </div>
+                              <div class="cards">
+                                  <div class="sec1">
+                                    <h5>Shopify designer for our shoptify theme.</h5>
+                                    <div class="info">
+                                        <p>by John Doe</p>
+                                        <p>last Update: 10/10/2019</p>
+                                      </div>
+                                  </div>
+                                  <div class="sec2">
+                                    <div class="upper">
+                                      <div class="info">
+                                          <p><b>Less than 10 hrs/week</b></p>
+                                          <p>Hours needed</p>
+                                        </div>
+                                        <div class="info">
+                                            <p><b>More than 3 months</b></p>
+                                            <p>Duration</p>
+                                          </div>
+                                    </div>
+                                      <div class="level">
+                                        <p>$$</p>
+                                        <p>Intermediate</p>
+                                      </div>
+                                    </div>
+                                  <div class="sec3">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae consequuntur eos nostrum odit atque?</p>
+                                  </div>
+                                  <div class="sec4">
+                                    <div class="wordpress">Wordpress</div>
+                                    <div class="html">HTML</div>
+                                    <div class="css">CSS</div>
+                                    <p>4 more.</p>
+                                    
+                                  </div>
+                                  <div class="sec5">
+                                      <div class="foot">
+                                          <div class="stars">
+                                            <div>
+                                              DScore:10
+                                            </div>
+                                            <div>
+                                              <span class="fa fa-star checked"></span>
+                                              <span class="fa fa-star checked"></span>
+                                              <span class="fa fa-star checked"></span>
+                                              <span class="fa fa-star checked"></span>
+                                              <span class="fa fa-star"></span>
+                                              <span><b>4.0</b> (2356)</span>
+                                            </div>
+                                            </div>
+                                          <span id="cart"><img src="./assets/right-arrow.png" alt=""></span>
+                                        </div>
+                                  </div>
+                                </div>
+                                <div class="cards">
+                                    <div class="sec1">
+                                      <h5>Shopify designer for our shoptify theme.</h5>
+                                      <div class="info">
+                                          <p>by John Doe</p>
+                                          <p>last Update: 10/10/2019</p>
+                                        </div>
+                                    </div>
+                                    <div class="sec2">
+                                      <div class="upper">
+                                        <div class="info">
+                                            <p><b>Less than 10 hrs/week</b></p>
+                                            <p>Hours needed</p>
+                                          </div>
+                                          <div class="info">
+                                              <p><b>More than 3 months</b></p>
+                                              <p>Duration</p>
+                                            </div>
+                                      </div>
+                                        <div class="level">
+                                          <p>$$</p>
+                                          <p>Intermediate</p>
+                                        </div>
+                                      </div>
+                                    <div class="sec3">
+                                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae consequuntur eos nostrum odit atque?</p>
+                                    </div>
+                                    <div class="sec4">
+                                      <div class="wordpress">Wordpress</div>
+                                      <div class="html">HTML</div>
+                                      <div class="css">CSS</div>
+                                      <p>4 more.</p>
+                                      
+                                    </div>
+                                    <div class="sec5">
+                                        <div class="foot">
+                                            <div class="stars">
+                                              <div>
+                                                DScore:10
+                                              </div>
+                                              <div>
+                                                <span class="fa fa-star checked"></span>
+                                                <span class="fa fa-star checked"></span>
+                                                <span class="fa fa-star checked"></span>
+                                                <span class="fa fa-star checked"></span>
+                                                <span class="fa fa-star"></span>
+                                                <span><b>4.0</b> (2356)</span>
+                                              </div>
+                                              </div>
+                                            <span id="cart"><img src="./assets/right-arrow.png" alt=""></span>
+                                          </div>
+                                    </div>
+                                  </div>
+                                  <div class="cards-section">
+                                      <div class="cards">
+                                        <div class="sec1">
+                                          <h5>Shopify designer for our shoptify theme.</h5>
+                                          <div class="info">
+                                              <p>by John Doe</p>
+                                              <p>last Update: 10/10/2019</p>
+                                            </div>
+                                        </div>
+                                        <div class="sec2">
+                                          <div class="upper">
+                                            <div class="info">
+                                                <p><b>Less than 10 hrs/week</b></p>
+                                                <p>Hours needed</p>
+                                              </div>
+                                              <div class="info">
+                                                  <p><b>More than 3 months</b></p>
+                                                  <p>Duration</p>
+                                                </div>
+                                          </div>
+                                            <div class="level">
+                                              <p>$$</p>
+                                              <p>Intermediate</p>
+                                            </div>
+                                          </div>
+                                        <div class="sec3">
+                                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae consequuntur eos nostrum odit atque?</p>
+                                        </div>
+                                        <div class="sec4">
+                                          <div class="wordpress">Wordpress</div>
+                                          <div class="html">HTML</div>
+                                          <div class="css">CSS</div>
+                                          <p>4 more.</p>
+                                          
+                                        </div>
+                                        <div class="sec5">
+                                            <div class="foot">
+                                                <div class="stars">
+                                                  <div>
+                                                    DScore:10
+                                                  </div>
+                                                  <div>
+                                                    <span class="fa fa-star checked"></span>
+                                                    <span class="fa fa-star checked"></span>
+                                                    <span class="fa fa-star checked"></span>
+                                                    <span class="fa fa-star checked"></span>
+                                                    <span class="fa fa-star"></span>
+                                                    <span><b>4.0</b> (2356)</span>
+                                                  </div>
+                                                  </div>
+                                                <span id="cart"><img src="./assets/right-arrow.png" alt=""></span>
+                                              </div>
+                                        </div>
+                                      </div>
+                                      <div class="cards">
+                                          <div class="sec1">
+                                            <h5>Shopify designer for our shoptify theme.</h5>
+                                            <div class="info">
+                                                <p>by John Doe</p>
+                                                <p>last Update: 10/10/2019</p>
+                                              </div>
+                                          </div>
+                                          <div class="sec2">
+                                            <div class="upper">
+                                              <div class="info">
+                                                  <p><b>Less than 10 hrs/week</b></p>
+                                                  <p>Hours needed</p>
+                                                </div>
+                                                <div class="info">
+                                                    <p><b>More than 3 months</b></p>
+                                                    <p>Duration</p>
+                                                  </div>
+                                            </div>
+                                              <div class="level">
+                                                <p>$$</p>
+                                                <p>Intermediate</p>
+                                              </div>
+                                            </div>
+                                          <div class="sec3">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae consequuntur eos nostrum odit atque?</p>
+                                          </div>
+                                          <div class="sec4">
+                                            <div class="wordpress">Wordpress</div>
+                                            <div class="html">HTML</div>
+                                            <div class="css">CSS</div>
+                                            <p>4 more.</p>
+                                            
+                                          </div>
+                                          <div class="sec5">
+                                              <div class="foot">
+                                                  <div class="stars">
+                                                    <div>
+                                                      DScore:10
+                                                    </div>
+                                                    <div>
+                                                      <span class="fa fa-star checked"></span>
+                                                      <span class="fa fa-star checked"></span>
+                                                      <span class="fa fa-star checked"></span>
+                                                      <span class="fa fa-star checked"></span>
+                                                      <span class="fa fa-star"></span>
+                                                      <span><b>4.0</b> (2356)</span>
+                                                    </div>
+                                                    </div>
+                                                  <span id="cart"><img src="./assets/right-arrow.png" alt=""></span>
+                                                </div>
+                                          </div>
+                                        </div>
+                                        <div class="cards">
+                                            <div class="sec1">
+                                              <h5>Shopify designer for our shoptify theme.</h5>
+                                              <div class="info">
+                                                  <p>by John Doe</p>
+                                                  <p>last Update: 10/10/2019</p>
+                                                </div>
+                                            </div>
+                                            <div class="sec2">
+                                              <div class="upper">
+                                                <div class="info">
+                                                    <p><b>Less than 10 hrs/week</b></p>
+                                                    <p>Hours needed</p>
+                                                  </div>
+                                                  <div class="info">
+                                                      <p><b>More than 3 months</b></p>
+                                                      <p>Duration</p>
+                                                    </div>
+                                              </div>
+                                                <div class="level">
+                                                  <p>$$</p>
+                                                  <p>Intermediate</p>
+                                                </div>
+                                              </div>
+                                            <div class="sec3">
+                                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae consequuntur eos nostrum odit atque?</p>
+                                            </div>
+                                            <div class="sec4">
+                                              <div class="wordpress">Wordpress</div>
+                                              <div class="html">HTML</div>
+                                              <div class="css">CSS</div>
+                                              <p>4 more.</p>
+                                              
+                                            </div>
+                                            <div class="sec5">
+                                                <div class="foot">
+                                                    <div class="stars">
+                                                      <div>
+                                                        DScore:10
+                                                      </div>
+                                                      <div>
+                                                        <span class="fa fa-star checked"></span>
+                                                        <span class="fa fa-star checked"></span>
+                                                        <span class="fa fa-star checked"></span>
+                                                        <span class="fa fa-star checked"></span>
+                                                        <span class="fa fa-star"></span>
+                                                        <span><b>4.0</b> (2356)</span>
+                                                      </div>
+                                                      </div>
+                                                    <span id="cart"><img src="./assets/right-arrow.png" alt=""></span>
+                                                  </div>
+                                            </div>
+                                          </div>
+                                          <div class="cards">
+                                              <div class="sec1">
+                                                <h5>Shopify designer for our shoptify theme.</h5>
+                                                <div class="info">
+                                                    <p>by John Doe</p>
+                                                    <p>last Update: 10/10/2019</p>
+                                                  </div>
+                                              </div>
+                                              <div class="sec2">
+                                                <div class="upper">
+                                                  <div class="info">
+                                                      <p><b>Less than 10 hrs/week</b></p>
+                                                      <p>Hours needed</p>
+                                                    </div>
+                                                    <div class="info">
+                                                        <p><b>More than 3 months</b></p>
+                                                        <p>Duration</p>
+                                                      </div>
+                                                </div>
+                                                  <div class="level">
+                                                    <p>$$</p>
+                                                    <p>Intermediate</p>
+                                                  </div>
+                                                </div>
+                                              <div class="sec3">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae consequuntur eos nostrum odit atque?</p>
+                                              </div>
+                                              <div class="sec4">
+                                                <div class="wordpress">Wordpress</div>
+                                                <div class="html">HTML</div>
+                                                <div class="css">CSS</div>
+                                                <p>4 more.</p>
+                                                
+                                              </div>
+                                              <div class="sec5">
+                                                  <div class="foot">
+                                                      <div class="stars">
+                                                        <div>
+                                                          DScore:10
+                                                        </div>
+                                                        <div>
+                                                          <span class="fa fa-star checked"></span>
+                                                          <span class="fa fa-star checked"></span>
+                                                          <span class="fa fa-star checked"></span>
+                                                          <span class="fa fa-star checked"></span>
+                                                          <span class="fa fa-star"></span>
+                                                          <span><b>4.0</b> (2356)</span>
+                                                        </div>
+                                                        </div>
+                                                      <span id="cart"><img src="./assets/right-arrow.png" alt=""></span>
+                                                    </div>
+                                              </div>
+                                            </div>
+                          </div>
+                      </section>
+                      <section id="section-iconbox-2"><p>2</p></section>
+                      <section id="section-iconbox-3"><p>3</p></section>
+                      <section id="section-iconbox-4"><p>4</p></section>
+                      <section id="section-iconbox-5"><p>5</p></section>
+                      <section id="section-iconbox-6"><p>6</p></section>
+                    </div>
+                    <!-- /content -->
+                  </div>
+                  <!-- /tabs -->
+                <!-- </section> -->
+              
+          <div class="see-more">
+            <div class="btn-end">
+              View More
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      
+      <div class="usersay">
+          <div class="header">
+            <h1>OUR USERS SAY</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            <span></span>
+          </div>
+            <!-- <div class="people-section">
+              <div class="long-card">
+                <div class="mid">
+                  <h4>John Doe</h4>
+                  <p>Teacher</p>
+                </div>
+                <div class="last">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, nisi vero, exercitationem corrupti excepturi rerum, nemo architecto nulla enim unde facilis! Corrupti laborum natus.
+                  </p>
+                </div>
+                <div class="circle">
+                  
+                </div>
+              </div>
+            </div> -->
+      </div>
+
+<!-- card slider -->
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="long-card">
+          <div class="mid">
+            <h4>John Doe</h4>
+            <p>Teacher</p>
+          </div>
+          <div class="last">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, nisi vero, exercitationem corrupti excepturi rerum, nemo architecto nulla enim unde facilis! Corrupti laborum natus.
+            </p>
+          </div>
+          <div class="circle">
+            <img src="./assets/boy.png">
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+          <div class="long-card">
+              <div class="mid">
+                <h4>John Doe</h4>
+                <p>Teacher</p>
+              </div>
+              <div class="last">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, nisi vero, exercitationem corrupti excepturi rerum, nemo architecto nulla enim unde facilis! Corrupti laborum natus.
+                </p>
+              </div>
+              <div class="circle">
+                <img src="./assets/man (1).png">
+              </div>
+            </div>
+      </div>
+      <div class="swiper-slide">
+          <div class="long-card">
+              <div class="mid">
+                <h4>John Doe</h4>
+                <p>Teacher</p>
+              </div>
+              <div class="last">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, nisi vero, exercitationem corrupti excepturi rerum, nemo architecto nulla enim unde facilis! Corrupti laborum natus.
+                </p>
+              </div>
+              <div class="circle">
+                <img src="./assets/girl (1).png">
+              </div>
+            </div>
+      </div>
+      <div class="swiper-slide">
+          <div class="long-card">
+              <div class="mid">
+                <h4>John Doe</h4>
+                <p>Teacher</p>
+              </div>
+              <div class="last">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, nisi vero, exercitationem corrupti excepturi rerum, nemo architecto nulla enim unde facilis! Corrupti laborum natus.
+                </p>
+              </div>
+              <div class="circle">
+                <img src="./assets/boy.png">
+              </div>
+            </div>
+      </div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+    <!-- Add Arrows -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+  <!-- <p class="append-buttons">
+    <a href="#" class="prepend-2-slides">Prepend 2 Slides</a>
+    <a href="#" class="prepend-slide">Prepend Slide</a>
+    <a href="#" class="append-slide">Append Slide</a>
+    <a href="#" class="append-2-slides">Append 2 Slides</a>
+  </p> -->
+<!-- card slider -->
+
+      <div class="jumbo-btn">
+        <h3>Take charge of Your future and start learning from DiscoverBlockchain online courses</h3>
+        <div class="signup">
+            <div class="btn-end">
+              SIGN UP FREE
+            </div>
+          </div>
+      </div>
+      <!-- Footer -->
+        <Footer class="footer">
+          <div class="left-footer">
+            <div class="subscribe">
+              <h2>Subscribe</h2>
+              <div class="input">
+                <input type="text" name="" id="" placeholder="Please Enter Your Email">
+                <span>Subscribe</span>
+              </div>
+            </div>
+            <div class="connect">
+              <h2>Stay Connected</h2>
+              <div class="connect-span">
+                <span><i class="fab fa-facebook-f"></i></span>
+                <span><i class="fab fa-twitter"></i></span>
+                <span><i class="fab fa-linkedin-in"></i></span>
+                <span><i class="fas fa-at"></i></span>
+                <span><i class="fab fa-instagram"></i></span>
+              </div>
+              <div class="navigation">
+                <h2>Navigation</h2>
+                <div class="nav-span">
+                  <span>Courses</span>
+                  <span>Jobs</span>
+                  <span>About Us</span>
+                  <span>Company</span>
+                  <span>Careers</span>
+                  <span>Contact</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="center-left-footer">
+            <h1>How To</h1>
+            
+              <div><a href="">Become a Teacher</a></div>
+              <div><a href="">Post a Job</a></div>
+              <div><a href="">Learn a Skill</a></div>
+              <div><a href="">Earn as a Freelancer</a></div>
+          </div>
+          <div class="center-right-footer">
+              <h1>Other Pages</h1>
+                <div><a href="">News</a></div>
+                <div><a href="">FAQ</a></div>
+                <div><a href="">Support</a></div>
+          </div>
+          <div class="right-footer">
+            <h1>Language</h1>
+            <p><a href="">United States (English)</a></p>
+          </div>
+        </Footer>
+      <!-- Footer -->
+      <div class="last-div">
+        <div class="icon">
+
+          <img src="./assets/logo.PNG"  alt="">
+        </div>
+      </div>
+
+
+    <script src="js/cbpFWTabs.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script>
+    /* Set the width of the side navigation to 250px */
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+/* Set the width of the side navigation to 0 */
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+    <script>
+      (function() {
+        [].slice.call(document.querySelectorAll(".tabs")).forEach(function(el) {
+          new CBPFWTabs(el);
+        });
+      })();
+    </script>
+    <script>
+        var appendNumber = 4;
+        var prependNumber = 1;
+        var swiper = new Swiper('.swiper-container', {
+          slidesPerView: 3,
+          centeredSlides: true,
+          spaceBetween: 30,
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+          },
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+        });
+
+      </script>
+      <script>
+        function show_hide(){
+          var click = document.getElementById("drop-content");
+          if(click.style.display==="none"){
+            click.style.display ="block";
+          }
+          else{
+            click.style.display = "none";
+          }
+        }
+      </script>
+      <script src="js/modernizr.custom.js"></script>
+      <!-- //for tabs section// -->
+      <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+      <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+  </body>
+</html>
