@@ -1209,11 +1209,11 @@ strong {
     display: none;
   }
 
-  /* .swiper-slide {
+  .swiper-slide {
     width: 300px !important;
     margin: 10px 0px;
     /* left: -3%; */
-  /* } */
+  }
 
   .long-card {
     margin-right: 0px !important;
